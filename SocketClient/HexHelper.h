@@ -10,7 +10,7 @@
 
 @interface HexHelper : NSObject
 
-+ (NSString *)toHex:(int)tempint;
++ (NSString *)toHex:(uint16_t)tempint;
 
 + (NSString *)hexStringFromString:(NSString *)string;
 

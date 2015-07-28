@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D370BDA4-7DC7-4BF6-9606-4836DA04F2D2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SocketClient</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>62F7714B78899A51DD2CEBEFC2074A55206A3B7B</key>
+		<string>https://github.com/DoesGodBlessAManWhoDoNotBelieveHim/UDPDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SocketClient.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>62F7714B78899A51DD2CEBEFC2074A55206A3B7B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DoesGodBlessAManWhoDoNotBelieveHim/UDPDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>62F7714B78899A51DD2CEBEFC2074A55206A3B7B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>62F7714B78899A51DD2CEBEFC2074A55206A3B7B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UDPDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
