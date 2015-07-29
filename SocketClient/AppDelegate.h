@@ -10,6 +10,13 @@
 
 #define SCREEN_SIZE [UIScreen mainScreen].bounds.size
 
+#ifdef DEBUG
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
