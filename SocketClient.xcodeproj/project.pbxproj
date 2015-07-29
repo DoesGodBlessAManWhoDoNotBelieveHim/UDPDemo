@@ -48,8 +48,8 @@
 		78367C641B6070F600A105BF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F75C191B5E8D8E00842875 /* GCDAsyncSocket.m */; };
 		78367C691B6080B400A105BF /* SliderBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 78367C681B6080B400A105BF /* SliderBack.png */; };
 		78367C6A1B6080B400A105BF /* SliderBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 78367C681B6080B400A105BF /* SliderBack.png */; };
-		7845310B1B687BFE00FF0B9F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7845310A1B687BFE00FF0B9F /* settings.png */; };
-		7845310C1B687BFE00FF0B9F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7845310A1B687BFE00FF0B9F /* settings.png */; };
+		784531131B68AADC00FF0B9F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 784531121B68AADC00FF0B9F /* settings.png */; };
+		784531141B68AADC00FF0B9F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 784531121B68AADC00FF0B9F /* settings.png */; };
 		7848EA881B6715AB00FB9788 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7848EA871B6715AB00FB9788 /* CustomView.m */; };
 		788593F21B65C3A700C3CCA8 /* UDPServerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 788593F11B65C3A700C3CCA8 /* UDPServerTool.m */; };
 		788593F51B65C3B900C3CCA8 /* UDPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 788593F41B65C3B900C3CCA8 /* UDPTool.m */; };
@@ -110,7 +110,7 @@
 		78367C321B606F5C00A105BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		78367C351B606F5C00A105BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78367C681B6080B400A105BF /* SliderBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SliderBack.png; sourceTree = "<group>"; };
-		7845310A1B687BFE00FF0B9F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		784531121B68AADC00FF0B9F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		7848EA861B6715AB00FB9788 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		7848EA871B6715AB00FB9788 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		788593F01B65C3A700C3CCA8 /* UDPServerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPServerTool.h; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 		788FBD921B5F23AC009E7D15 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				7845310A1B687BFE00FF0B9F /* settings.png */,
+				784531121B68AADC00FF0B9F /* settings.png */,
 				78367C681B6080B400A105BF /* SliderBack.png */,
 				788FBD931B5F23C2009E7D15 /* 0-0.png */,
 				788FBD941B5F23C2009E7D15 /* 0-100.png */,
@@ -441,7 +441,7 @@
 				788FBDBE1B5F23C2009E7D15 /* 窗帘2.png in Resources */,
 				788FBDBB1B5F23C2009E7D15 /* 90.png in Resources */,
 				788FBDC01B5F23C2009E7D15 /* 灯光2.png in Resources */,
-				7845310B1B687BFE00FF0B9F /* settings.png in Resources */,
+				784531131B68AADC00FF0B9F /* settings.png in Resources */,
 				18F75C001B5E714F00842875 /* LaunchScreen.xib in Resources */,
 				788FBDB81B5F23C2009E7D15 /* 60.png in Resources */,
 				788FBDC11B5F23C2009E7D15 /* 离家.png in Resources */,
@@ -470,7 +470,7 @@
 				78367C561B60705500A105BF /* 90.png in Resources */,
 				78367C511B60704700A105BF /* 40.png in Resources */,
 				78367C541B60705000A105BF /* 70.png in Resources */,
-				7845310C1B687BFE00FF0B9F /* settings.png in Resources */,
+				784531141B68AADC00FF0B9F /* settings.png in Resources */,
 				78367C5F1B60706D00A105BF /* 在家.png in Resources */,
 				78367C501B60704400A105BF /* 30.png in Resources */,
 				78367C4F1B60704100A105BF /* 20.png in Resources */,
@@ -640,14 +640,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Raymond Wong (WLAZNUS52P)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Huiruitong Electrical Appliance Co.,Ltd (28M9L5HYL8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Huiruitong Electrical Appliance Co.,Ltd (28M9L5HYL8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SocketClient/PrefixHeader.pch";
 				INFOPLIST_FILE = SocketClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5802b0de-5702-4c2f-b49f-e11a3cbea5bf";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -656,14 +657,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Raymond Wong (WLAZNUS52P)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen Huiruitong Electrical Appliance Co.,Ltd (28M9L5HYL8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shenzhen Huiruitong Electrical Appliance Co.,Ltd (28M9L5HYL8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SocketClient/PrefixHeader.pch";
 				INFOPLIST_FILE = SocketClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5802b0de-5702-4c2f-b49f-e11a3cbea5bf";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
