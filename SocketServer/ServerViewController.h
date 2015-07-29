@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 #import "UDPServerTool.h"
+#import "CustomView.h"
 
 
 #define key_CurtainsOpen            @"key_CurtainsOpen"
@@ -32,6 +33,8 @@
 @property (assign) NSInteger brightnessOfLightInHall;
 @property (assign) NSInteger brightnessOfLightInDinningRoom;
 @property (assign) NSInteger pattern;
+@property (strong) IBOutlet CustomView *bindingView;
+- (IBAction)settings:(NSButton *)sender;
 
 @end
 

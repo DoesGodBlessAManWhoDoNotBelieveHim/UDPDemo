@@ -94,12 +94,19 @@
 }
 
 - (IBAction)showBindingView:(id)sender {
-    _bindingView.hidden = NO;
-    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        _bindingView.alpha = 1;
-    } completion:^(BOOL finished) {
-        
-    }];
+    if (_bindingView.hidden) {
+        //show
+        _bindingView.hidden = NO;
+        [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            _bindingView.alpha = 1;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
+    else{
+        //hide
+        [self hideBindingView];
+    }
 }
 - (void)hideBindingView{
     [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{

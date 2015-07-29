@@ -167,4 +167,7 @@
 }
 
 
+- (IBAction)settings:(NSButton *)sender {
+    _bindingView.hidden = !_bindingView.hidden;
+}
 @end
