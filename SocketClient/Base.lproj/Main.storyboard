@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -152,14 +153,14 @@
                                         <exclude reference="pYd-KC-Ovf"/>
                                         <exclude reference="F7k-GV-49J"/>
                                         <exclude reference="pew-AY-Wfz"/>
+                                        <exclude reference="9bi-l5-8nl"/>
+                                        <exclude reference="Ldt-XE-vyi"/>
+                                        <exclude reference="b1U-Sf-Ia0"/>
                                         <exclude reference="m2Z-jo-eMc"/>
                                         <exclude reference="tEZ-OR-0UN"/>
                                         <exclude reference="wBP-ax-EPE"/>
                                         <exclude reference="SyW-3A-DrA"/>
                                         <exclude reference="hZW-CO-9U7"/>
-                                        <exclude reference="9bi-l5-8nl"/>
-                                        <exclude reference="Ldt-XE-vyi"/>
-                                        <exclude reference="b1U-Sf-Ia0"/>
                                         <exclude reference="Jkl-Nd-s27"/>
                                         <exclude reference="RSQ-ng-lyy"/>
                                         <exclude reference="XaN-DQ-0QQ"/>
@@ -180,14 +181,14 @@
                                         <include reference="pYd-KC-Ovf"/>
                                         <include reference="F7k-GV-49J"/>
                                         <include reference="pew-AY-Wfz"/>
+                                        <include reference="9bi-l5-8nl"/>
+                                        <include reference="Ldt-XE-vyi"/>
+                                        <include reference="b1U-Sf-Ia0"/>
                                         <include reference="m2Z-jo-eMc"/>
                                         <include reference="tEZ-OR-0UN"/>
                                         <include reference="wBP-ax-EPE"/>
                                         <include reference="SyW-3A-DrA"/>
                                         <include reference="hZW-CO-9U7"/>
-                                        <include reference="9bi-l5-8nl"/>
-                                        <include reference="Ldt-XE-vyi"/>
-                                        <include reference="b1U-Sf-Ia0"/>
                                         <include reference="Jkl-Nd-s27"/>
                                         <include reference="RSQ-ng-lyy"/>
                                         <include reference="XaN-DQ-0QQ"/>
@@ -227,12 +228,12 @@
                                 <exclude reference="iFa-SS-JDw"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Nwx-KR-5Mz"/>
-                                <exclude reference="09H-Pd-eul"/>
-                                <exclude reference="4N1-5k-akA"/>
                                 <exclude reference="ppD-th-LHk"/>
                                 <exclude reference="q7g-mX-4YP"/>
                                 <exclude reference="XZq-eU-QO1"/>
+                                <exclude reference="09H-Pd-eul"/>
+                                <exclude reference="4N1-5k-akA"/>
+                                <exclude reference="Nwx-KR-5Mz"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -241,10 +242,10 @@
                                 <include reference="iFa-SS-JDw"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="09H-Pd-eul"/>
-                                <include reference="4N1-5k-akA"/>
                                 <include reference="ppD-th-LHk"/>
                                 <include reference="q7g-mX-4YP"/>
+                                <include reference="09H-Pd-eul"/>
+                                <include reference="4N1-5k-akA"/>
                             </mask>
                         </variation>
                     </view>
@@ -715,7 +716,7 @@
         <image name="0.png" width="560" height="516"/>
         <image name="SliderBack.png" width="536" height="114"/>
         <image name="bj.png" width="720" height="1280"/>
-        <image name="settings.png" width="47" height="46"/>
+        <image name="settings.png" width="46" height="46"/>
         <image name="在家.png" width="150" height="150"/>
         <image name="离家.png" width="150" height="150"/>
     </resources>
