@@ -22,10 +22,17 @@
 - (IBAction)openCurtains:(UIButton *)sender;
 
 
+@property (strong, nonatomic) IBOutlet UIView *bindingView;
+
 @property (strong, nonatomic) IBOutlet UITextField *hostTextField;
 
 @property (strong, nonatomic) IBOutlet UITextField *portTextField;
 
-- (IBAction)bind;
+
+- (IBAction)toBind:(UIButton *)sender;
+
+
+- (IBAction)showBindingView:(UIButton *)sender;
+
 @end
 

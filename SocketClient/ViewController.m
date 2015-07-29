@@ -55,6 +55,10 @@
     if ([_portTextField isFirstResponder]) {
         [_portTextField resignFirstResponder];
     }
+    
+    if (!_bindingView.hidden) {
+        [self hideBindingView];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -81,13 +85,29 @@
     }];
 }
 
-- (IBAction)bind {
+- (IBAction)toBind:(UIButton *)sender {
     [[UDPTool shareInstance]startBindHost:_hostTextField.text port:_portTextField.text.integerValue];
     BOOL active = [[UDPTool shareInstance] active];
     _hostTextField.enabled = !active;
     _portTextField.enabled = !active;
+    active?[sender setTitle:@"Binded" forState:UIControlStateNormal]:[sender setTitle:@"Bind" forState:UIControlStateNormal];
 }
 
+- (IBAction)showBindingView:(id)sender {
+    _bindingView.hidden = NO;
+    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _bindingView.alpha = 1;
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+- (void)hideBindingView{
+    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _bindingView.alpha = 0;
+    } completion:^(BOOL finished) {
+        _bindingView.hidden = YES;
+    }];
+}
 - (IBAction)openCurtains:(UIButton *)sender {
     //这里假设开的窗帘 后面参数都是1
 

@@ -47,7 +47,7 @@
 + (instancetype)shareInstance;
 
 // 绑定，开始接受或者停止接受消息
-- (void)startStop:(NSInteger)port;
+- (void)startStop:(NSInteger)port withError:(NSError **)err;
 // 根据 地址 发送data
 - (void)sendUDPData:(NSData *)data;
 

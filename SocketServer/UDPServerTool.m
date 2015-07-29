@@ -31,22 +31,21 @@ static UDPServerTool *_instance;
 //}
 
 
-- (void)startStop:(NSInteger)port{
+- (void)startStop:(NSInteger)port withError:(NSError *__autoreleasing *)error{
     if (_isRunning) {
         [self.serverSocket close];
         _isRunning = false;
         NSLog(@"关闭socket");
     }
     else{
-        NSError *error;
-        if (![self.serverSocket bindToPort:port error:&error]) {
-            NSLog(@"服务器不能正常绑定到端口：%li 原因是：%@",(long)port,error);
+        if (![self.serverSocket bindToPort:port error:error]) {
+            NSLog(@"服务器不能正常绑定到端口：%li 原因是：%@",(long)port,*error);
             return;
         }
         
-        if (![self.serverSocket beginReceiving:&error]) {
+        if (![self.serverSocket beginReceiving:error]) {
             [self.serverSocket close];
-            NSLog(@"服务器现不能接受消息,原因是:%@",error);
+            NSLog(@"服务器现不能接受消息,原因是:%@",*error);
             return;
         }
         NSLog(@"准备好了");

@@ -26,8 +26,13 @@
 }
 
 - (IBAction)startBind:(id)sender {
+    NSError *error;
+    [[UDPServerTool shareInstance]startStop:_portTextField.stringValue.integerValue withError:&error];
     
-    [[UDPServerTool shareInstance]startStop:_portTextField.stringValue.integerValue];
+    if (error) {
+        NSAlert *alert = [NSAlert alertWithError:error];
+        [alert beginSheetModalForWindow:self.view.window completionHandler:nil];
+    }
     
     _portTextField.enabled = ![[UDPServerTool shareInstance] isRunning];
     
